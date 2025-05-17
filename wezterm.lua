@@ -4,13 +4,15 @@ local wezterm = require 'wezterm'
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
--- This is where you actually apply your config choices
+-- Variable to set default shell
+local default_shell = 'powershell.exe'
+-- local default_shell = 'zsh'
 
 -- Change the color scheme
 config.color_scheme = 'Palenight (Gogh)'
 
 -- Set default program to Powershell
-config.default_prog = { 'powershell.exe' }
+config.default_prog = { default_shell }
 
 -- Set window opacity to 0.9
 config.window_background_opacity = 0.9
